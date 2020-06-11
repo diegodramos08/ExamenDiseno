@@ -6,4 +6,3 @@ if [ $? -ne 0 ]; then
 fi
 
 ./a.out
-#./MultS4Bits
