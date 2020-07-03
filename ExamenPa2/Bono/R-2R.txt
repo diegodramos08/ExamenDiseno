@@ -1,0 +1,7 @@
+Hacer un análisis de voltajes para un DAC de 4 bits
+utilizando el esquema R-2R.
+0001
+0010
+0100
+1000
+
