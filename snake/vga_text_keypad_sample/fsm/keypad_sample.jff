@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><!--Created with JFLAP 7.1.--><structure>
+	<type>fa</type>
+	<automaton>
+		<!--The list of states.-->
+		<state id="0" name="q0">
+			<x>83.0</x>
+			<y>228.0</y>
+		</state>
+		<state id="1" name="q1">
+			<x>346.0</x>
+			<y>58.0</y>
+			<label>vga_we=1, vga_addr=810, vga_data=0x0e4c</label>
+		</state>
+		<state id="2" name="q2">
+			<x>392.0</x>
+			<y>165.0</y>
+			<label>vga_we=1, vga_addr=810, vga_data=0x0e52</label>
+		</state>
+		<state id="3" name="q3">
+			<x>387.0</x>
+			<y>281.0</y>
+			<label>vga_we=1, vga_addr=810, vga_data=0x0e44</label>
+		</state>
+		<state id="4" name="q4">
+			<x>359.0</x>
+			<y>400.0</y>
+			<label>vga_we=1, vga_addr=810, vga_data=0x0e55</label>
+		</state>
+		<!--The list of transitions.-->
+		<transition>
+			<from>0</from>
+			<to>0</to>
+			<read>keypad == 0</read>
+		</transition>
+		<transition>
+			<from>1</from>
+			<to>0</to>
+			<read/>
+		</transition>
+		<transition>
+			<from>0</from>
+			<to>2</to>
+			<read>keypad[1] == 1</read>
+		</transition>
+		<transition>
+			<from>0</from>
+			<to>4</to>
+			<read>keypad[3] == 1</read>
+		</transition>
+		<transition>
+			<from>0</from>
+			<to>1</to>
+			<read>keypad[0] == 1</read>
+		</transition>
+		<transition>
+			<from>0</from>
+			<to>3</to>
+			<read>keypad[2] == 1</read>
+		</transition>
+		<transition>
+			<from>2</from>
+			<to>0</to>
+			<read/>
+		</transition>
+		<transition>
+			<from>4</from>
+			<to>0</to>
+			<read/>
+		</transition>
+		<transition>
+			<from>3</from>
+			<to>0</to>
+			<read/>
+		</transition>
+	</automaton>
+</structure>
